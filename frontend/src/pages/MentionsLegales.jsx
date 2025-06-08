@@ -39,8 +39,8 @@ function Mentions() {
             Téléphone : +229 41 38 15 77
             <br />
             Site web :
-            <Link style={{color:"#5f9ea0"}} to="" target="_blank" rel="noopener noreferrer">
-              https://www.nolcopshop.com
+            <Link style={{color:"#5f9ea0"}} to="https://nolcop-shop-niqe.onrender.com" target="_blank" rel="noopener noreferrer">
+              https://nolcop-shop-niqe.onrender.com
             </Link>
           </p>
         </section>
