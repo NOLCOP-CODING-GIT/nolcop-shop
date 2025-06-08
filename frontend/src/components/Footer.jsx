@@ -3,6 +3,8 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
+import { library } from "@fortawesome/fontawesome-svg-core";
+library.add(faInstagram, faWhatsapp, faXTwitter);
 
 function Footer() {
   return (
