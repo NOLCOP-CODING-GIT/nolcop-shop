@@ -3,7 +3,7 @@ import Product from "./Produits";
 import DetailsProduits from "../components/DetailsProduits";
 import Contact from "./Contact";
 import Panier from "./Panier";
-import NavBar from "../components/navBar";
+import NavBar from "../components/NavBar";
 import Home from "./Home";
 import Mentions from "./MentionsLegales";
 import { PanierProvider } from "../components/PanierContext";
