@@ -4,7 +4,11 @@ const bodyParser = require("body-parser");
 const sqlite3 = require("sqlite3").verbose();
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://nolcop-shop-niqe.onrender.com",
+  })
+);
 app.use(bodyParser.json());
 
 const db = new sqlite3.Database("./formulaire.db");
