@@ -9,7 +9,7 @@ library.add(faInstagram, faWhatsapp, faXTwitter);
 function Footer() {
   return (
     <footer class="footer">
-      <p>&copy; 2025 NOLCOP SHOP. Tous droits réservés.</p>
+      <p id="footerTitle">&copy; 2025 NOLCOP SHOP. Tous droits réservés.</p>
       <div class="footer-links">
         <Link to="/CONTACT">Contactez-nous</Link>
         <Link to="/A-PROPOS">À propos</Link>

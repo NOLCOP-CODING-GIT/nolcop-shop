@@ -196,7 +196,7 @@ form input {
   color: var(--headerBg);
   font-size: 1.1em;
 }
-form input:focus{
+form input:focus {
   border-color: #66a060;
   transition: 0.3s;
 }
@@ -410,7 +410,7 @@ td {
   box-shadow: 0 0 10px var(--headerBg);
   flex-wrap: wrap;
 }
-.mention-legales-section{
+.mention-legales-section {
   max-width: 500px;
   margin: 40px auto;
   padding: 20px;
@@ -448,7 +448,7 @@ td {
   align-items: center;
   justify-content: space-between;
 }
-.footer-links{
+.footer-links {
   display: flex;
   gap: 20px;
 }
@@ -457,13 +457,13 @@ td {
   text-decoration: none;
   font-size: 1.2em;
 }
-.reseaux-sociaux{
+.reseaux-sociaux {
   display: flex;
   gap: var(--marginDefault);
   align-items: center;
   justify-content: center;
 }
-.footer-links-icons{
+.footer-links-icons {
   color: #333333;
   font-size: 1.5em;
   cursor: pointer;
@@ -522,5 +522,45 @@ td {
   }
   form button {
     font-size: 1em;
+  }
+  .footer {
+    background: #66a060;
+    color: #fff;
+    padding: var(--paddingHeaderBuild);
+    border: var(--borderDefault);
+    border-radius: var(--borderRadiusDefault);
+    text-align: center;
+    margin-top: var(--marginDefault);
+    color: var(--colorAllText);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-links a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  .reseaux-sociaux {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-links-icons {
+    color: #333333;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  #footerTitle {
+    font-size: 0.8em;
   }
 }
