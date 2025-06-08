@@ -1,0 +1,30 @@
+[
+    {
+        "email": "jeanorlandzinsou@gmail.com",
+        "id": 1,
+        "nom": "ZINSOU",
+        "password": "jeanorland890",
+        "prenom": "Jean Orland"
+    },
+    {
+        "email": "kikijodel@gmail.com",
+        "id": 2,
+        "nom": "KIKI",
+        "password": "heiomdsdoej586",
+        "prenom": "Jodel"
+    },
+    {
+        "email": "akpmarcus@gmail.com",
+        "id": 3,
+        "nom": "AKAKPO",
+        "password": "nuazdjonfief54647",
+        "prenom": "Marcus"
+    },
+    {
+        "email": "cdgpierre@gmail.com",
+        "id": 4,
+        "nom": "CODJO",
+        "password": "heopmmqueiop72200",
+        "prenom": "Martial"
+    }
+]
