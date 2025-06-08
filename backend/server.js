@@ -100,6 +100,16 @@ app.get("/api/formulaire", (req, res) => {
   });
 });
 
+const path = require("path");
+
+// Pour servir les fichiers du build React
+app.use(express.static(path.join(__dirname, "frontend", "dist")));
+
+// Si aucune route API ne correspond, on envoie index.html
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
+});
+
 // Démarrage serveur
 app.listen(3001, () => {
   console.log("Backend lancé sur https://localhost:3001");
