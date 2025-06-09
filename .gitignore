@@ -7,7 +7,7 @@ frontend/node_modules/
 frontend/dist/
 
 # SQLite
-backend/*.sqlite
+backend/*.db
 
 # Logs
 *.log
