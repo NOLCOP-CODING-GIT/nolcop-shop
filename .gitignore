@@ -2,9 +2,12 @@
 node_modules/
 .env
 
-# React
-client/node_modules/
-client/build/
+# React (avec Vite dans frontend/)
+frontend/node_modules/
+frontend/dist/
 
 # SQLite
-server/*.sqlite
+backend/*.sqlite
+
+# Logs
+*.log
