@@ -37,7 +37,9 @@ app.post("/api/formulaire", (req, res) => {
 
   db.get(`SELECT * FROM reponses WHERE email = ?`, [email], (err, row) => {
     if (err)
-      return res.status(500).json({ success: false, message: "Erreur serveur" });
+      return res
+        .status(500)
+        .json({ success: false, message: "Erreur serveur" });
 
     if (row) {
       return res
@@ -50,7 +52,9 @@ app.post("/api/formulaire", (req, res) => {
       [nom, prenom, email, password],
       function (err) {
         if (err)
-          return res.status(500).json({ success: false, message: "Erreur serveur" });
+          return res
+            .status(500)
+            .json({ success: false, message: "Erreur serveur" });
 
         res.status(200).json({
           success: true,
@@ -71,7 +75,9 @@ app.post("/api/login", (req, res) => {
     [email, password],
     (err, row) => {
       if (err)
-        return res.status(500).json({ success: false, message: "Erreur serveur" });
+        return res
+          .status(500)
+          .json({ success: false, message: "Erreur serveur" });
 
       if (!row) {
         return res
@@ -101,15 +107,12 @@ app.get("/api/formulaire", (req, res) => {
   });
 });
 
-// ✅ Sert le frontend buildé avec Vite
 app.use(express.static(path.join(__dirname, "../frontend/dist")));
-
-// ✅ Pour React Router : redirige tout vers index.html
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/dist/index.html"));
 });
 
 // ✅ Démarrage du serveur
-app.listen(3001, () => {
-  console.log("Backend lancé sur http://localhost:3001");
+app.listen(PORT, () => {
+  console.log(`Backend lancé sur http://localhost:${PORT}`);
 });
