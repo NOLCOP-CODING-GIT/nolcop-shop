@@ -1,13 +1,12 @@
-# Node
+# Node & logs
 node_modules/
+*.log
 .env
 
-# React (avec Vite dans frontend/)
+# Frontend
 frontend/node_modules/
 frontend/dist/
 
-# SQLite
+# Backend
+backend/node_modules/
 backend/*.db
-
-# Logs
-*.log
