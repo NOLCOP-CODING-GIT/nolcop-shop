@@ -2,16 +2,16 @@ services:
   - type: web
     name: nolcop-shop-backend
     env: node
+    rootDir: backend
     buildCommand: |
-      cd frontend && npm install && npm run build
-      cd ../backend && npm install
+      npm install
+      cd ../frontend && npm install && npm run build
     startCommand: node server.js
     envVars:
       - key: NODE_VERSION
         value: 18
     buildFilter:
       paths:
-        - frontend/**
         - backend/**
+        - frontend/**
     autoDeploy: true
-    rootDir: backend
