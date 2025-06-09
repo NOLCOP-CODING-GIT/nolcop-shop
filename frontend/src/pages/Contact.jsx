@@ -31,8 +31,8 @@ function Contact() {
     e.preventDefault();
 
     const url = isLogin
-      ? "https://server-nolcop-shop.onrender.com/api/login"
-      : "https://server-nolcop-shop.onrender.com/api/formulaire";
+      ? "https://server-nolcop-shop-8n4n.onrender.com/api/login"
+      : "https://server-nolcop-shop-8n4n.onrender.com/api/formulaire";
 
     try {
       const res = await fetch(url, {
